@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="register">
+  <div class="container">
+    <div class="nav">
+      <div class="brand"><div class="logo"></div><div><b>Turbo.az</b><div class="sub">Register</div></div></div>
+      <div class="nav-links" id="navLinks"></div>
+    </div>
+
+    <div class="card" style="margin-top:14px; max-width:520px">
+      <h2>Qeydiyyat</h2>
+      <div class="muted" style="margin-top:6px">Qeydiyyatdan sonra avtomatik BUYER olursan</div>
+      <hr/>
+      <form class="form" id="regForm">
+        <div><label>Ad Soyad</label><input id="regFullName" required/></div>
+        <div><label>Email</label><input id="regEmail" type="email" required/></div>
+        <div><label>Password</label><input id="regPassword" type="password" required/></div>
+        <button class="btn ok">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

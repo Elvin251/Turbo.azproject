@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Mənim elanlarım</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="myads">
+  <div class="container">
+    <div class="nav">
+      <div class="brand"><div class="logo"></div><div><b>Turbo.az</b><div class="sub">SELLER</div></div></div>
+      <div class="nav-links" id="navLinks"></div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="row" style="justify-content:space-between;align-items:center">
+        <div>
+          <h2>Mənim elanlarım</h2>
+          <div class="muted" style="margin-top:6px">Yalnız sənin yaratdığın elanlar</div>
+        </div>
+        <button class="btn ok" id="createAdBtn">Yeni elan</button>
+      </div>
+    </div>
+
+    <div id="myAdsGrid" class="grid cards" style="margin-top:14px"></div>
+    <div id="pager" class="card" style="margin-top:14px"></div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

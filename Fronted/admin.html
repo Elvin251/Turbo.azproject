@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Admin</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="admin">
+  <div class="container">
+    <div class="nav">
+      <div class="brand"><div class="logo"></div><div><b>Turbo.az</b><div class="sub">Admin panel</div></div></div>
+      <div class="nav-links" id="navLinks"></div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2>Admin Panel</h2>
+      <div class="muted" style="margin-top:6px">Marka/Model yarat, elanları aktiv/deaktiv et, sil</div>
+    </div>
+
+    <div class="grid" style="grid-template-columns:1fr 1fr; margin-top:14px">
+      <div class="card">
+        <h3>Brand əlavə et</h3>
+        <form class="form" id="brandForm" style="margin-top:10px">
+          <input id="brandName" placeholder="BMW" required/>
+          <button class="btn ok">Əlavə et</button>
+        </form>
+        <hr/>
+        <div id="brandsList"></div>
+      </div>
+
+      <div class="card">
+        <h3>Model əlavə et</h3>
+        <form class="form" id="modelForm" style="margin-top:10px">
+          <input id="modelName" placeholder="C-Class" required/>
+          <input id="modelBrandId" type="number" placeholder="brandId" required/>
+          <button class="btn ok">Əlavə et</button>
+        </form>
+        <hr/>
+        <div id="modelsList"></div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h3>Elanlar</h3>
+      <div id="adminAds" class="grid cards" style="margin-top:12px"></div>
+      <div id="pager" class="card" style="margin-top:14px"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>

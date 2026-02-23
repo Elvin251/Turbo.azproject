@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Elan</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="createad">
+  <div class="container">
+    <div class="nav">
+      <div class="brand"><div class="logo"></div><div><b>Turbo.az</b><div class="sub">Elan əlavə et</div></div></div>
+      <div class="nav-links" id="navLinks"></div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <h2 id="pageTitle">Yeni elan</h2>
+      <div class="muted" style="margin-top:6px">BrandId və ModelId admin paneldən götürülür</div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <form class="form" id="adForm">
+        <div class="row">
+          <div style="flex:1"><label>BrandId</label><input id="brandId" type="number" required/></div>
+          <div style="flex:1"><label>ModelId</label><input id="modelId" type="number" required/></div>
+          <div style="flex:1"><label>Buraxılış ili</label><input id="releaseYear" type="number" required/></div>
+        </div>
+
+        <div class="row">
+          <div style="flex:1"><label>Mühərrik həcmi</label><input id="engineVolume" type="number" step="0.1" required/></div>
+          <div style="flex:1"><label>Yürüş (km)</label><input id="mileageKm" type="number" required/></div>
+          <div style="flex:1"><label>Qiymət (AZN)</label><input id="price" type="number" required/></div>
+        </div>
+
+        <div class="row">
+          <div style="flex:1"><label>Yanacaq</label><input id="fuelType" placeholder="GASOLINE" required/></div>
+          <div style="flex:1"><label>Sürətlər qutusu</label><input id="gearbox" placeholder="AUTOMATIC" required/></div>
+          <div style="flex:1"><label>Şəhər</label><input id="city" placeholder="Bakı" required/></div>
+        </div>
+
+        <div class="row">
+          <div style="flex:1"><label>Şəkil URL (optional)</label><input id="imageUrl" placeholder="https://..."/></div>
+        </div>
+
+        <div>
+          <label>Açıqlama</label>
+          <textarea id="description" rows="4" placeholder="Elan haqqında..."></textarea>
+        </div>
+
+        <div class="row" style="justify-content:flex-end">
+          <button class="btn" type="button" id="cancelBtn">Ləğv</button>
+          <button class="btn ok">Yadda saxla</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
