@@ -1,0 +1,15 @@
+package az.developia.turbo_system_name.Tasks.Lesson92;
+
+import java.util.*;
+
+public class Task10 {
+    public static void main(String[] args) {
+        ArrayList<String> colors = new ArrayList<>();
+        colors.add("Red");
+        colors.add("Blue");
+
+        Collections.shuffle(colors);
+
+        System.out.println(colors);
+    }
+}
